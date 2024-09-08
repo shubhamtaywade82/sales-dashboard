@@ -1,0 +1,15 @@
+{
+  "name": "sales-dashboard-root",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "start": "concurrently \"yarn --cwd backend start\" \"yarn --cwd frontend start\"",
+    "dev": "concurrently \"yarn --cwd backend dev\" \"yarn --cwd frontend start\""
+  },
+  "devDependencies": {
+    "concurrently": "^7.0.0"
+  },
+  "dependencies": {
+    "react-router-dom": "^6.26.1"
+  }
+}
